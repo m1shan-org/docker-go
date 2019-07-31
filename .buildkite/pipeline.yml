@@ -1,0 +1,6 @@
+steps:
+  - name: ":golang:"
+    command: "./cmd/test.sh"
+    plugins:
+      - docker-compose#3.0.3:
+          run: goservice
