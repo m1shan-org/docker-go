@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"os"
 )
+
+func main() {
 	log.Println("---STARTING!!!!!---")
 
 	http.HandleFunc("/exit", func(w http.ResponseWriter, r *http.Request) {
