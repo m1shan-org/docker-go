@@ -1,12 +1,9 @@
 steps:
   - label: "Run App"
-    plugins:
-      - docker-compose#v3.0.3:
-          run: goservice
+    command: "make up"
 
-  - wait
 
   - label: "Tests"
-    command: "./cmd/test.sh"
+    command: "make test"
 
   - wait
