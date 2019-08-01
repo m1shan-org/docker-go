@@ -1,9 +1,9 @@
 steps:
   - label: "Run App"
-    command: "make up"
+    command: "docker-compose -f docker-compose.yml up -d --build"
 
 
   - label: "Tests"
-    command: "make test"
+    command: "cmd/test.sh"
 
   - wait
