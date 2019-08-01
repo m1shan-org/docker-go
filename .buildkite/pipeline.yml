@@ -1,6 +1,12 @@
 steps:
-  - name: ":golang:"
-    command: "./cmd/test.sh"
+  - label: "Run App"
     plugins:
       - docker-compose#v3.0.3:
           run: goservice
+
+  - wait
+
+  - label: "Tests"
+    command: "./cmd/test.sh"
+
+  - wait
