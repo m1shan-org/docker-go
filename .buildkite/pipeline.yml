@@ -1,5 +1,7 @@
 steps:
   - label: "Tests"
-    command: "go test ./..."
+    commands:
+      go get -v github.com/m1shan-org/docker-go
+      go test ./...
     plugins:
       - golang#v2.0.0
