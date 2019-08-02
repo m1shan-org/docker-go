@@ -1,6 +1,7 @@
 steps:
   - label: "Test"
     commands:
+      - "echo TTTEST"
       - "./cmd/test.sh"
     plugins:
       - docker-compose#v3.0.3:
