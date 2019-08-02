@@ -3,5 +3,5 @@ steps:
     commands:
       - "./cmd/test.sh"
     plugins:
-      - docker-compose#v3.0.3
+      - docker-compose#v3.0.3:
           build: goservice
