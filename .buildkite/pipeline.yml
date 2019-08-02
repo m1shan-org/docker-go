@@ -1,5 +1,5 @@
 steps:
   - label: "Tests"
-    command: "cmd/test.sh"
+    command: "go test ./..."
     plugins:
       - golang#v2.0.0
