@@ -2,8 +2,6 @@ steps:
   - label: "Checkout"
     commands:
       - "go get -v github.com/m1shan-org/docker-go"
-      - "ls"
-      - "go test"
     plugins:
       - golang#v2.0.0
 
@@ -13,5 +11,7 @@ steps:
     commands:
       - "echo TEST"
       - "go test"
+    plugins:
+      - golang#v2.0.0
 
   - wait
