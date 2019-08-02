@@ -3,4 +3,4 @@ steps:
     command: "echo TTTEST"
     plugins:
       - docker-compose#v3.0.3:
-          build: goservice
+          run: goservice
