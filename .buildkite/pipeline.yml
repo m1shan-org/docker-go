@@ -1,10 +1,6 @@
 steps:
   - label: "Test"
     commands:
-      - "echo TEST"
-      - "ls"
-      - "go test"
+      - "./cmd/test.sh"
     plugins:
-      - golang#v2.0.0
-
-  - wait
+      - docker-compose#v3.0.3
