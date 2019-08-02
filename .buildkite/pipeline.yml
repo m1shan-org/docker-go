@@ -1,12 +1,4 @@
 steps:
-  - label: "Checkout"
-    commands:
-      - "go get -v github.com/m1shan-org/docker-go"
-    plugins:
-      - golang#v2.0.0
-
-  - wait
-
   - label: "Test"
     commands:
       - "echo TEST"
