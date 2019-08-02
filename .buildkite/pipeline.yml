@@ -1,8 +1,6 @@
 steps:
   - label: "Test"
-    commands:
-      - "echo TTTEST"
-      - "./cmd/test.sh"
+    command: "echo TTTEST"
     plugins:
       - docker-compose#v3.0.3:
           build: goservice
