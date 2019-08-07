@@ -8,4 +8,4 @@ steps:
   - name: ":docker: Build Docker Image"
     commands:
       - "pwd"
-      - "./buildkite/steps/build-docker-image.sh alpine"
+      - "./.ybuildkite/steps/build-docker-image.sh alpine"
