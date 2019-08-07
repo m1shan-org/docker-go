@@ -6,4 +6,6 @@ steps:
     continue_on_failure: true
 
   - name: ":docker: Build Docker Image"
-    command: "./buildkite/steps/build-docker-image.sh alpine"
+    commands:
+      - "pwd"
+      - "./buildkite/steps/build-docker-image.sh alpine"
