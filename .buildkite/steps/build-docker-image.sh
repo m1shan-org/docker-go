@@ -8,4 +8,4 @@ build_docker_iamge() {
     docker build
 }
 
-build_docker_images
+build_docker_image
