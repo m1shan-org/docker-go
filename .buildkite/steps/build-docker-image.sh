@@ -8,4 +8,4 @@ build_docker_image() {
     docker build
 }
 
-build_docker_image
+build_docker_image "alpine"
