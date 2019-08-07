@@ -2,8 +2,8 @@ steps:
   - name: ":hammer: Run Tests"
     command: "echo Tests"
 
- - wait: ~
-   continue_on_failure: true
+  - wait: ~
+    continue_on_failure: true
 
- - name: ":docker: Build Docker Image"
-   command: "./buildkite/steps/build-dcoker-image.sh alpine"
+  - name: ":docker: Build Docker Image"
+    command: "./buildkite/steps/build-dcoker-image.sh alpine"
