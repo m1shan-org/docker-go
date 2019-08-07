@@ -2,7 +2,7 @@ steps:
   - name: ":hammer: Run Tests"
     command: "echo Tests"
 
- - wait
+ - wait: ~
  continue_on_failure: true
 
  - name: ":docker: Build Docker Image"
