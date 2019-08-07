@@ -1,10 +1,6 @@
 steps:
   - name: ":hammer: Run Tests"
     command: "echo Tests"
-    #pugins:
-    #  docker-compose#v3.0.3
-    #	config .buildkite/docker-compose.yml
-    #	run: agent
 
  - wait
  continue_on_failure: true
